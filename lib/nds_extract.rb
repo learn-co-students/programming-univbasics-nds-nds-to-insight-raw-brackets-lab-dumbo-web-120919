@@ -42,9 +42,9 @@ while movieCounter < directors_database[directorCounter][:movies].length do
   end
   directorHash[directors_database[directorCounter]] << directorTotal
   directorTotal = 0
-  directorCounter += 1 
+  directorCounter += 1
+  directorHash
 end
-    directorHash
 
 
 
