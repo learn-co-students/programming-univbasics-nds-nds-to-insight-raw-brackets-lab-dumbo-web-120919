@@ -31,19 +31,16 @@ def directors_totals(nds)
 while directorCounter < directors_database.length do
     movieCounter = 0
 while movieCounter < directors_database[directorCounter][:movies].length do
-<<<<<<< HEAD
     directorTotal += directors_database[directorCounter][:movies][movieCounter][:worldwide_gross]
     totalCounter += directors_database[directorCounter][:movies][movieCounter][:worldwide_gross]
     movieCounter += 1 
   end
   directorHash[directors_database[directorCounter][:name]] = directorTotal
-=======
-    directorTotal += directors_database[directorCounter][:movies][movieCounter][:price]
-    totalCounter += directors_database[directorCounter][:movies][movieCounter][:price]
+    directorTotal += directors_database[directorCounter][:movies][movieCounter][:worldwide_gross]
+    totalCounter += directors_database[directorCounter][:movies][movieCounter][:worldwide_gross]
     movieCounter += 1 
   end
   directorHash[directors_database[directorCounter]] << directorTotal
->>>>>>> 7b898f5cd5821033adfaccdec68d52906ae79821
   directorTotal = 0
   directorCounter += 1 
 end
