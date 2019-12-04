@@ -18,7 +18,6 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  binding.pry
  director_index = 0 
  totals = {} 
  while director_index < nds.length do 
